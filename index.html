@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QuesaGirls - Quesabirrias y Aguas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #f06292; /* rosa fuerte */
+      --color-secondary: #fce4ec; /* rosa claro */
+      --color-bg: #fffafc; /* blanco rosado */
+      --color-text: #4a148c; /* morado oscuro */
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem 2rem 1rem;
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .logo {
+      max-width: 120px;
+      margin-bottom: 1rem;
+      border-radius: 50%;
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    .slogan {
+      font-style: italic;
+      font-size: 1.3rem;
+      color: #ffeef4;
+      margin-top: 0.5rem;
+    }
+
+    .description {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: var(--color-secondary);
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin: 3rem auto;
+      max-width: 1100px;
+      padding: 0 1rem;
+    }
+
+    .product {
+      background-color: white;
+      border-radius: 20px;
+      padding: 1.5rem;
+      max-width: 300px;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .product h3 {
+      margin-top: 1rem;
+    }
+
+    .price {
+      font-weight: bold;
+      color: var(--color-primary);
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 4rem 0 2rem 0;
+    }
+
+    .socials a img {
+      width: 45px;
+      height: 45px;
+      transition: transform 0.3s;
+    }
+
+    .socials a img:hover {
+      transform: scale(1.2) rotate(5deg);
+    }
+
+    footer {
+      background-color: var(--color-primary);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    footer h3 {
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .products {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo de QuesaGirls" class="logo">
+    <h1>QuesaGirls</h1>
+    <p class="slogan">"Una Quesabirria como debe de ser"</p>
+  </header>
+
+  <section class="description">
+    <h2>¿Quiénes somos?</h2>
+    <p>Somos QuesaGirls, un negocio lleno de sabor y estilo que te ofrece las mejores quesabirrias y aguas frescas artesanales. Nuestro amor por la cocina tradicional mexicana nos inspira a brindarte experiencias inolvidables a través de cada bocado y sorbo.</p>
+  </section>
+
+  <section class="products">
+    <div class="product">
+      <img src="quesabirria.jpg" alt="Quesabirria">
+      <h3>Quesabirria</h3>
+      <p class="price">$60 MXN</p>
+    </div>
+    <div class="product">
+      <img src="agua-jamaica.jpg" alt="Agua de Jamaica">
+      <h3>Agua de Jamaica</h3>
+      <p class="price">$40 MXN</p>
+    </div>
+    <div class="product">
+      <img src="agua-horchata.jpg" alt="Agua de Horchata">
+      <h3>Agua de Horchata</h3>
+      <p class="price">$40 MXN</p>
+    </div>
+  </section>
+
+  <section class="socials">
+    <a href="https://www.instagram.com/quesagirls_02" target="_blank">
+      <img src="instagram.png" alt="Instagram">
+    </a>
+    <a href="https://www.tiktok.com/@quesagirls_" target="_blank">
+      <img src="tiktok.png" alt="TikTok">
+    </a>
+    <a href="https://twitter.com/quesagirls_02" target="_blank">
+      <img src="twitter.png" alt="Twitter">
+    </a>
+  </section>
+
+  <footer>
+    <h3>Integrantes de la Empresa</h3>
+    <p>María Fernanda Vazquez Sandoval</p>
+    <p>Veronica Sofia Payan Beltran</p>
+    <p>Kimberly Jatziry Aguilar Alvarado</p>
+    <p>Valeria Mendoza Flores</p>
+    <p>Juan Pablo Astrain Rivas</p>
+    <p>Joaquin Adrian Castillo Muñoz</p>
+
+  </footer>
+</body>
+</html>
